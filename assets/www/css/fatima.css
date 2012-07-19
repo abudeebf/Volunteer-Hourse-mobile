@@ -1,0 +1,31 @@
+#status{
+color:red;
+}
+#x{
+color:
+#FFA500 ;
+}
+h2
+{
+color:
+#FFA500 ;
+}
+table#participants{
+	overflow:scroll;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+
+#participants td {
+	border:1px solid  #FFA500 ;;
+	background-color: #FFA500 ;
+	padding:3px;
+}
+
+input.i{
+font-size: 10px;
+}
+input.i2{
+font-size: 10px;
+}
+
