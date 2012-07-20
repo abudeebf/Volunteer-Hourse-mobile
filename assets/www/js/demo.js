@@ -12,7 +12,7 @@ $("#createsiginin").live("pagecreate", function(event) {
 		             if( res.signin==true)
 		             {
     			      sessionStorage.setItem('user', JSON.stringify(res)); 
-                      $.mobile.changePage("profile.html");            
+                               $.mobile.changePage("profile.html");
 		             }
 		             else
 		             {
@@ -63,8 +63,7 @@ $("#im").live("pagecreate", function(event) {
   		var htmlstring=items.join('');
   		$('table#participants',page).html(htmlstring);
   		
-   alert("key" +sessionStorage["users"]);
-    
+   
   		
   		$('input.mybox',page).each(function(index){
   		 if (($(this,page).val()) == 'true')
@@ -97,22 +96,9 @@ $("#im").live("pagecreate", function(event) {
      var d2=Date.parse(d1.substr(d1,d1.length-1));
        $(this).scroller('setDate',new Date(d2) , true) ;
     });
-   
-   
-     
-               sessionStorage.removeItem('users'); 
-           for (i=0; i<=sessionStorage.length-1; i++)  
-    {  
-       key = sessionStorage.key(i) 
-              
-              alert ("key " + key );
-              alert("key" +sessionStorage[key])
-    }  
-  
-   
     $("#approve",page).live("click",function(e) {
-    var event=$("input.event_id",page).val();
-    alert(event);
+    var event1=$("input.event_id",page).val();
+   
    var attend=new Array();
    var startime=new Array();
    var endtime=new Array();
@@ -138,17 +124,12 @@ $("#im").live("pagecreate", function(event) {
 		         "users":users,
 		         "attend":attend,
 		         "starttime":startime,
-		         "event":event,
+		         "event":event1,
 		         "endtime":endtime
 		         }, 
 		        function(res,code) {
-		            alert("participation confirmed successfully");
-                   
-                    
+		            alert("participation confirmed successfully"); 
 		           	});              
- 
-           
-   
 	});	 
 	 
 });

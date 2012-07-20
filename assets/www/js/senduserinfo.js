@@ -1,0 +1,17 @@
+function senduserinfo() {
+var page = $("#createsiginin");
+  $("#status", page).html(" calling remote server.........  ");
+		   $.post("http://volnteerhours.herokuapp.com/msignin.json", 
+		        {
+		         "email":$("#email",page).val(),
+		         "password":$("#password",page).val()
+		         }, function(res,code) {
+		             if( res.signin==true)
+		             { 
+		             	window.location="profile.html";
+    			      sessionStorage.setItem('user', JSON.stringify(res)); }
+    			      else
+    			      {
+    			      	$("#status", page).html("email  or password is not correct");
+    			      }
+    			  })};

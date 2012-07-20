@@ -1,5 +1,20 @@
-
-<div data-role="page" id="im">
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Volnteer hours</title> 
+	<link href="css/jquery.mobile-1.0rc1.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/fatima.css" rel="stylesheet" type="text/css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.mobile-1.0rc1.min.js"></script>
+    <script src="js/showprofile.js"></script>
+     <script src="js/showParticipant.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mobiscroll-2.0.custom.min.css" />
+	<script type="text/javascript" src="js/mobiscroll-2.0.custom.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>
+</head> 
+<body id="im"> 
+<div data-role="page" >
 		<div data-role="header">
       <center> <h2> Volunteer Hours </h2> </center>
       </div>
@@ -11,13 +26,15 @@
                  <label id="y">
                    choose the event 
                 </label>
-                <select id="event"></select> 
+                <select id="event1"></select> 
              </fieldset>
              <div data-role="controlgroup">
-	    	<a id="eventLink" data-role="button">show participant</a>  
+	    	<a id="eventLink" data-role="button" onClick="showParticipant()">show participant</a>  
 	    </div>  
    <div id="first"></div>
 		<div id="status"></div>
 		</div>
 		</div>
 	</div>
+</body>
+</html>
