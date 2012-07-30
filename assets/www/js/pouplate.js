@@ -8,7 +8,7 @@ var data=JSON.parse(sessionStorage.getItem('users'));
      var dlength=JSON.stringify(data['user'].length);
      var items = [];
      var x;
-       items.push('<tr><td> Name </td><td>attending </td><td>start time </td><td> end time </td></tr>');
+       items.push('<tr><th> Name </th><th>attending </th><th>start time </th><th> end time </th></tr>');
        items.push(' <form name="approve" action=""http://volnteerhours.herokuapp.com/eparticipant.json"" method="post">');
        for(i=0; i<dlength; i++) {
   		 x='<input type="checkbox" class="mybox" value='+ JSON.stringify(data['user'][i].attend)+' >';
@@ -48,4 +48,5 @@ var data=JSON.parse(sessionStorage.getItem('users'));
      var d2=Date.parse(d1.substr(d1,d1.length-1));
        $(this).scroller('setDate',new Date(d2) , true) ;
     });
+      
 }

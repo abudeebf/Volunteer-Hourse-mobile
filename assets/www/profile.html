@@ -8,6 +8,9 @@
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="js/jquery.mobile-1.0rc1.min.js"></script>
     <script src="js/showprofile.js"></script>
+    <script src="js/exit.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/md5.js"></script>
+    
      <script src="js/showParticipant.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/mobiscroll-2.0.custom.min.css" />
 	<script type="text/javascript" src="js/mobiscroll-2.0.custom.min.js"></script>
@@ -15,26 +18,37 @@
 </head> 
 <body id="im"> 
 <div data-role="page" >
-		<div data-role="header">
-      <center> <h2> Volunteer Hours </h2> </center>
+		<div data-role="header" data-position="fixed">
+      <center> <img src="img/header3.png" width:50 > </center>
+       <div data-role="navbar">
+      <ul>
+      <li><span ontouchstart="exit()"><a href="" data-role="button" data-icon="delete" data-iconpos="notext">Quit</a></li>
+      
+      </ul>
       </div>
-    <div data-role="content">	
-	    <div data-role="fieldcontain">
-	    
-	      <fieldset data-role="controlgroup">
+      </div>
+	      <table>
+	      <tr>
+	      <td>
+	      <div id="gravi"></div>
+	      </td>
+	      <td>
 	       <center> <label id ="x" ></label><br /></center>
                  <label id="y">
+                 </td>
+                 </tr>
+                 </table>
                    choose the event 
                 </label>
                 <select id="event1"></select> 
-             </fieldset>
-             <div data-role="controlgroup">
-	    	<a id="eventLink" data-role="button" onClick="showParticipant()">show participant</a>  
-	    </div>  
-   <div id="first"></div>
+	    	<center><a id="eventLink" data-role="button" style=" color: white;" data-theme="a" data-inline="true" data-mini="true" data-theme="b" onClick="showParticipant()">show participant</a></center>  
 		<div id="status"></div>
 		</div>
-		</div>
+		
+		
 	</div>
+	<footer>
+      <center> <p> (c)Fatima & Avishek <p> </center>
+       </footer>
 </body>
 </html>

@@ -9,20 +9,23 @@
     <script src="js/jquery.mobile-1.0rc1.min.js"></script>
      <script src="js/pouplate.js"></script>
       <script src="js/approval.js"></script>
+       <script src="js/profilego.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/mobiscroll-2.0.custom.min.css" />
 	<script type="text/javascript" src="js/mobiscroll-2.0.custom.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/cordova-1.9.0.js"></script>
 </head> 
 <body id="participantpage"> 
-<div data-role="page" >
-		<div data-role="header">
-      <center> <h2> Volunteer Hours </h2> </center>
+<div data-role="page"  >
+		<div data-role="header" data-position="fixed">
+       <center> <img src="img/header3.png" width:50 > </center>
+      <div data-role="navbar">
+      <ul>
+      <li><span ontouchstart="profilego()"><a href="" data-role="button" data-icon="back" data-iconpos="notext">Back</a> </li>
+      <li><span ontouchstart="approval()"><a href="" data-role="button" data-icon="check" data-iconpos="notext">Confirm</a></li>
       
-    </div>
-	         <center> <div data-role="controlgroup">
-	    	<a  data-role="button" onClick="approval()">Confirm</a> 
-	    	  
-	    </div> </center>
+      </ul>
+        </div>
+        </div> 
 				<center><h2><div id="title"></div></h2></center>
 				 <center><center><h3><div id="no"></div></h3></center>
 				<table id="participants">
@@ -33,6 +36,16 @@
 				</tr>
 				</table>
 				</center>
+		
+        	
+        	<center> 
+	    	<a  data-role="button"style=" color: white;" data-theme="a" data-inline="true"data-mini="true onClick="approval()">Confirm</a> 
+	    	  
+	        </center>
+    	   		
+        	
+        	
+   
 			</body>
 			</html>
 		
