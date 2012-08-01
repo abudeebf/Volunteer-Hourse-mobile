@@ -9,7 +9,7 @@ var data=JSON.parse(sessionStorage.getItem('users'));
      var items = [];
      var x;
        items.push('<tr><th> Name </th><th>attending </th><th>start time </th><th> end time </th></tr>');
-       items.push(' <form name="approve" action=""http://volnteerhours.herokuapp.com/eparticipant.json"" method="post">');
+       items.push(' <form name="approve" action="https://volunteerhours-org.herokuapp.com/eparticipant.json" method="post">');
        for(i=0; i<dlength; i++) {
   		 x='<input type="checkbox" class="mybox" value='+ JSON.stringify(data['user'][i].attend)+' >';
        items.push('<tr><td>' + JSON.stringify(data['user'][i].name) +'<input class="userid" type="hidden"  value='+ JSON.stringify(data['user'][i].user_id) +'><input class="event_id" type="hidden"  value='+ JSON.stringify(data['user'][i].event_id)+ '></td><td>'+x+'</td><td><input class="i" value=' + JSON.stringify(data['user'][i].start_time)+'/></td><td><input class="i2" value=' + JSON.stringify(data['user'][i].end_time)+'/></td></tr>');

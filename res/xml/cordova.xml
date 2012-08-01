@@ -25,7 +25,8 @@
 
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
     <access origin="http://www.volunteerhours.org*"/>
-    <access orignin="http://129.64.237.68*"/>
+    <access orignin="https://volunteerhours-org.herokuapp.com*"/>
+    
     <access origin="http://volnteerhours.herokuapp.com*" />
     <!-- <access origin="https://example.com" subdomains="true" /> such as above, but including subdomains, such as www -->
     <!-- <access origin=".*"/> Allow all domains, suggested development use only -->

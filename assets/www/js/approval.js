@@ -22,7 +22,7 @@ function approval()
     });
    
     
-    $.post("http://volnteerhours.herokuapp.com/confirm_participants.json", 
+    $.post("https://volunteerhours-org.herokuapp.com/confirm_participants.json", 
 		        {
 		         "users":users,
 		         "attend":attend,

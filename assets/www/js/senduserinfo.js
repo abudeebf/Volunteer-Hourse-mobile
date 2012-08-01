@@ -1,7 +1,7 @@
 function senduserinfo() {
 var page = $("#createsiginin");
   $("#status", page).html(" calling remote server.........  ");
-		   $.post("http://volnteerhours.herokuapp.com/msignin.json", 
+		   $.post("https://volunteerhours-org.herokuapp.com/msignin.json", 
 		        {
 		         "email":$("#email",page).val(),
 		         "password":$("#password",page).val()
